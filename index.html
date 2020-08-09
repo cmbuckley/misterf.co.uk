@@ -1,0 +1,22 @@
+---
+layout: page
+background:
+    image: world.jpg
+    position: center 75%
+---
+
+<p>Hello and welcome to {{ site.name }}!</p>
+
+<div id="instafeed"></div>
+
+<script src="https://ig.instant-tokens.com/users/6f55d7fa-2046-46db-8bab-ae8b76361ad7/instagram/17841439684378162/token.js?userSecret=p7lb5n47hwoxmz9a3kz7"></script>
+<script type="text/javascript" src="assets/vendor/instafeed/instafeed.min.js"></script>
+{% raw %}
+<script type="text/javascript">
+    var feed = new Instafeed({
+        accessToken: InstagramToken,
+        template: '<figure><a href="{{link}}"><img src="{{image}}" /></a><figcaption>{{caption}}</figcaption></figure>',
+    });
+    feed.run();
+</script>
+{% endraw %}

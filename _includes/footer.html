@@ -1,0 +1,52 @@
+<hr>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          {% if site.social.twitter %}
+          <li class="list-inline-item">
+            <a href="https://www.twitter.com/{{ site.social.twitter }}">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.social.facebook %}
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/{{ site.social.facebook }}">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.social.linkedin %}
+          <li class="list-inline-item">
+            <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.social.instagram %}
+          <li class="list-inline-item">
+            <a href="https://instagram.com/{{ site.social.instagram }}">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+        </ul>
+        <p class="copyright text-muted">Copyright &copy; {{ 'now' | date: "%Y" }} {{ site.name }}</p>
+      </div>
+    </div>
+  </div>
+</footer>

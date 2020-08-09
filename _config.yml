@@ -1,0 +1,23 @@
+name: Mister F Learning
+title: Mister F
+description:
+host: 0.0.0.0
+
+repository: cmbuckley/misterf.co.uk
+url: https://misterf.co.uk
+baseurl: ""
+
+markdown: kramdown
+highlighter: rouge
+
+exclude:
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+
+sass:
+  style: compressed
+
+social:
+  instagram: misterflearning
+  email: hello@misterf.co.uk

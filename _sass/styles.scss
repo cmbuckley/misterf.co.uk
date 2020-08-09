@@ -1,0 +1,103 @@
+// Import Core Clean Blog SCSS
+@import "../assets/vendor/startbootstrap-clean-blog/scss/clean-blog.scss";
+
+header.masthead {
+    margin-bottom: 10px;
+
+    .page-heading {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+}
+
+.img-profile {
+    max-width: 260px;
+}
+
+.gallery-img img {
+    width: 100%;
+}
+
+footer {
+    padding-bottom: 20px;
+
+    .list-inline-item a:hover {
+        color: #a982d1;
+    }
+}
+
+@media (max-width: 576px) {
+    .img-profile {
+        max-width: 120px;
+    }
+
+    .sr-only-xs {
+        // @include sr-only;
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+    }
+}
+
+.home-fb {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    overflow: hidden;
+}
+
+@media (min-width: 1200px) {
+    .home-text {
+        float: left;
+        width: 50%;
+    }
+
+    .home-fb {
+        margin: 10px 0 0 10px;
+        float: right;
+    }
+}
+
+@keyframes spinner {
+    to {transform: rotate(360deg);}
+}
+
+#instafeed {
+    &:empty {
+        margin-bottom: 1em;
+    }
+
+    &:empty:before {
+        content: '';
+        box-sizing: border-box;
+        position: absolute;
+        left: 50%;
+        width: 20px;
+        height: 20px;
+        margin-top: -10px;
+        margin-left: -10px;
+        border-radius: 50%;
+        border: 2px solid #ccc;
+        border-top-color: #000;
+        animation: spinner .6s linear infinite;
+    }
+
+    figure {
+        margin-bottom: 3rem;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    figcaption {
+        font-size: 80%;
+        white-space: pre-line;
+        overflow-wrap: anywhere;
+    }
+}
