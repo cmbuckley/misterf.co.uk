@@ -101,3 +101,13 @@ footer {
         overflow-wrap: anywhere;
     }
 }
+
+form {
+    label {
+        display: block;
+    }
+
+    input, textarea {
+        width: 100%;
+    }
+}
