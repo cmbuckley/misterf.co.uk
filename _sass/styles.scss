@@ -111,3 +111,14 @@ form {
         width: 100%;
     }
 }
+
+.avatar {
+    text-align: center;
+}
+
+@media (min-width: 500px) {
+    .avatar img {
+        float: left;
+        margin-right: 1em;
+    }
+}
