@@ -5,6 +5,8 @@ background:
     position: center 75%
 ---
 
+<p id="toast"></p>
+
 Hello and welcome to {{ site.name }}!
 
 ![Mister F Avatar](/img/misterf-avatar.jpg)

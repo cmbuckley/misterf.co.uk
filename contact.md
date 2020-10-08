@@ -10,7 +10,7 @@ background:
 
 Or you can contact me using the form below:
 
-<form action="https://send.pageclip.co/ecGrlCsgXPrmbKtxRRddcYit4ApVowFq/contact-form" method="post">
+<form action="https://send.pageclip.co/ecGrlCsgXPrmbKtxRRddcYit4ApVowFq/contact-form" method="post" onsubmit="toast(1)">
     <label for="email">Email Address</label>
     <input type="email" id="email" name="email" required autocomplete="email"><br />
 

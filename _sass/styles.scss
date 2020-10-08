@@ -51,6 +51,12 @@ footer {
     overflow: hidden;
 }
 
+#toast:not(:empty) {
+    border: 1px solid green;
+    padding: 5px;
+    background: #ccffcc;
+}
+
 @media (min-width: 1200px) {
     .home-text {
         float: left;
